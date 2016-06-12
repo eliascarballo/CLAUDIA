@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <link rel="stylesheet" href="web/css/bootstrap.css" />
+        <link rel="stylesheet" href="web/css/bootstrap-theme.min.css" />
+        <style type="text/css"> 
+            html {
+                background: #444444;
+                font-family: monospace;
+            }
+            h1 {
+                background: #0DC78C;
+                font-size:35px;
+                font-family: monospace;
+                
+            }
+            body {
+                width: 450px;
+                padding:15% 25px 25px 25px;
+                margin:auto;
+                background: #fff;
+                text-align:center;
+                padding: 5em 2em;
+            }
+            .usuario, .u {
+                float: left;
+                font-size: 30px;
+            }
+            .ordenador, .o {
+                float:right;
+                font-size:30px;
+            }
+            .o{
+                margin-left:80px;
+            }
+            .clear {
+                clear:both;
+            }
+            input.radio {
+                
+                width: 50px;
+            }
+            #resultado {
+                margin-top: 20px;
+                text-align: center;
+                font-size: 17px;
+            }
+            #opciones {
+                margin-top: 60px;
+                font-size:30px;
+                text-align:center;
+                background: #0DC78C;
+            }
+            img{
+                cursor:pointer
+            }
+            input{display: none}
+        </style>
+    </head>
+    <body class="fondito">
+    	
+        <h1>¿Piedra, Papel o Tijera?</h1>
+        <br>
+        <div class="u">Usuario : </div><div class="usuario">0</div>
+        <div class="ordenador">0</div><div class="o">Ordenador : </div>
+        <br>
+        <div class="clear"></div>
+        <div id="imagen_maquina"></div>
+        <div id="resultado"></div>
+        <br>
+        <div id="opciones">
+            <img id="opciones1" valor="Tijera" src="web/img/Tijera.jpg" height="50px">
+				|    |
+            <img id="opciones1" valor="Papel" src="web/img/Papel.jpg" height="50px">
+				|    |
+            <img id="opciones1" valor="Piedra" src="web/img/Piedra.jpg" height="50px">
+
+        </div>
+            <br>
+            <br>
+        <footer>
+        <p>&copy;All rights reserved. <rel="nofollow">CLVE</a>
+        </footer>
+
+        <script src="web/js/jquery-2.1.3.min.js"></script>
+        <script src="web/js/bootstrap.min.js"></script>
+        <script src="web/js/juego.js"></script>
+    </body>
+</html>
